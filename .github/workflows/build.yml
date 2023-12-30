@@ -66,5 +66,5 @@ jobs:
         with:
           name: ${{ env.APK_BASENAME_PREFIX }}_debug
           path: |
-            $APK_DIR_PATH/*.apk
-            $APK_DIR_PATH/output-metadata.json
+            ${{ env.APK_DIR_PATH }}/*.apk
+            ${{ env.APK_DIR_PATH }}/output-metadata.json
